@@ -1,4 +1,4 @@
-var repository= [
+var repository = [
   {
     PokemonName: 'Bulbasaur',
     PokemonHeight: 2.04,
@@ -54,3 +54,10 @@ var repository= [
     PokemonAbilities: ['Torrent'],
   }
 ]
+
+for (var i = 0; i < repository.length; i++) {
+  document.write('<h2>' + repository[i].PokemonName + '</h2>' + ' Height: ' + repository[i].PokemonHeight)
+if (repository[i].PokemonHeight >= 6.03) {
+  document.write(' (Wow that\'s big!)' )
+  }
+}
